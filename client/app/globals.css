@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css  */
+.body {
+ background-color: "#F4D35E";
+
+}
+
+
+.product-card {
+  width: 16rem; 
+  height: 28rem; 
+  padding: 2rem; 
+}
+.product-card img {
+  height: 8rem; 
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-slide {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: calc(100% * 2);
+}
+
+
+
+
+
+
+.goudy {
+  font-family: 'Goudy Old Style', serif;
+}
+
+.blackletter {
+  font-family: 'Blackletter', sans-serif;
+}
+
+.didot {
+  font-family: 'Didot', serif;
+}
+
+.sans {
+  font-family: 'Roboto', sans-serif;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.futura {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
+
+
